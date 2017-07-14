@@ -120,6 +120,10 @@ public class Library {
 				}
 			}
 		}
+		if (path.startsWith("other/lib")) {
+			System.err.println(path);
+			return "http://ray.cubicsun.space/repo/" + path;
+		}
 		return " https://libraries.minecraft.net/" + path;
 	}
 }
